@@ -17,7 +17,6 @@
     include('36.php');
     ?>
     <div class="col-lg-3 m-auto">
-        <br><br>
         <div class="container">
 
             <div class="header">
@@ -25,7 +24,10 @@
                 </h3>
                 <form action="47.php" method="post">
                     <label> cust_name: </label>
-                    <input type="text" name="cust_name" class="form-control" value="<?php if (isset($_POST['cust_name'])){echo$_POST['cust_name'];}?>"><br>
+                    <input type="text" name="cust_name" class="form-control"
+                        value="<?php if (isset($_POST['cust_name'])) {
+                            echo $_POST['cust_name'];
+                        } ?>"><br>
                     <button class="btn btn-success" type="submit" name="done"> Search </button>
                 </form>
             </div><br>
@@ -39,33 +41,35 @@
                     <th class="text-white"> mob_no </th>
                 </tr>
                 <?php
-                if(isset($_POST['done'])){
-                    $cust_name=$_POST['cust_name'];
-                include '36.php';
-                $q = "select * from cust where cust_name='$cust_name'";
+                if (isset($_POST['done'])) {
+                    $cust_name = $_POST['cust_name'];
+                    include '36.php';
+                    $q = "select * from cust where cust_name='$cust_name'";
 
-                $query = mysqli_query($con, $q);
+                    $query = mysqli_query($con, $q);
 
-                while ($result = mysqli_fetch_array($query)) {
-                    ?>
-                    <tr class="text-center">
-                        <td>
-                            <?php echo $result['cust_no']; ?>
-                        </td>
-                        <td>
-                            <?php echo $result['cust_name']; ?>
-                        </td>
-                        <td>
-                            <?php echo $result['item_purchase']; ?>
-                        </td>
-                        <td>
-                            <?php echo $result['mob_no']; ?>
-                        </td>
-                    </tr>
-                <?php
+                    while ($result = mysqli_fetch_array($query)) {
+                        ?>
+                        <tr class="text-center">
+                            <td>
+                                <?php echo $result['cust_no']; ?>
+                            </td>
+                            <td>
+                                <?php echo $result['cust_name']; ?>
+                            </td>
+                            <td>
+                                <?php echo $result['item_purchase']; ?>
+                            </td>
+                            <td>
+                                <?php echo $result['mob_no']; ?>
+                            </td>
+                        </tr>
+                        <?php
+                    }
                 }
-            }
                 ?>
             </table>
         </div>
     </div>
+</body>
+</html>
