@@ -15,7 +15,6 @@ function num($num) {
     echo "Given no is Even(this is Try Block)";
   }
   
-  //catch exception
   catch(Exception $e) {
     echo 'Message: ' .$e->getMessage();
   }
