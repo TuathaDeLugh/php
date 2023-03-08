@@ -44,7 +44,7 @@
                 if (isset($_POST['done'])) {
                     $cust_name = $_POST['cust_name'];
                     include '36.php';
-                    $q = "select * from cust where cust_name='$cust_name'";
+                    $q = "select * from cust where cust_name LIKE '%$cust_name%'";
 
                     $query = mysqli_query($con, $q);
 
