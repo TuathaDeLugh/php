@@ -48,7 +48,7 @@ $result = mysqli_fetch_array($fill);
     $mob_no = $_POST['mob_no'];
     $q = "UPDATE `cust` SET `cust_name`='$cust_name', `item_purchase`='$item_purchase', `mob_no`='$mob_no' WHERE `cust_no`=$cust_no";
     $query = mysqli_query($con,$q);
-    header('location:42.php');
+    header('location:old42.php');
  }
 ?>
  </div>
