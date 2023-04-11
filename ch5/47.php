@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- USE OLD 40 for insert data -->
     <?php
     include('36.php');
     ?>

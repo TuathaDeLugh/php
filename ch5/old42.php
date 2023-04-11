@@ -55,7 +55,7 @@
  <!-- /info -->
  <h1 class="text-center" > Display customer Data </h1>
  <br>
- <a href="40.php">  <button class="btn-info btn text-white">insert</button></a>  <br><br>
+ <a href="old40.php">  <button class="btn-info btn text-white">insert</button></a>  <br><br>
  <table class="table table-striped">
  
  <tr class="bg-dark text-center">
