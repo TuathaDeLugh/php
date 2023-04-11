@@ -1,6 +1,6 @@
 <?php
     $con = mysqli_connect("localhost","root","");
-    mysqli_select_db($con,"Meet");
+    mysqli_select_db($con,"db");
     $q = "insert into admin values('29','UmangSailor')";
     if(isset($con))
     {
