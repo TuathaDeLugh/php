@@ -22,7 +22,7 @@ if (isset($_POST['submit'])){
     $enroll = $_POST['enroll'];
     $dob = $_POST['dob'];
     $dept = $_POST['dept'];
-    $q = "insert into student values('$name','$enroll','$dob','$dept')";
+    $q = "insert into student values('$enroll','$name','$dob','$dept')";
     // $c = "create table student(name varchar(30),enroll varchar(12),dob varchar(8),dept varchar(20))";
     if(isset($con))
     {
@@ -38,6 +38,7 @@ if (isset($_POST['submit'])){
     if(mysqli_query($con,$q))
     {
         echo "<br>Data Inserted!";
+        header('location:45-46index.php');
     }
     mysqli_close($con);
 }
