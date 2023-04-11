@@ -41,6 +41,11 @@ $result = mysqli_fetch_array($fill);
  </div>
  </form>
 <?php
+// not in practical start
+if (!isset($_POST['done'])){
+    header('location:45-46index.php');
+}
+// not in practical end
  if (isset($_POST['done'])){
     
     $name = $_POST['name'];
