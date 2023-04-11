@@ -11,6 +11,13 @@
 <body>
 <?php
 include('36.php');
+// not in practical start
+include '36.php';
+if (!isset($_GET['enroll'])){
+    header('location:45-46index.php');
+}
+// not in practical end
+if (!isset($_GET['enroll'])){
 $enroll = $_GET['enroll'];
 $s = "select * from student where enroll=$enroll";
 $fill = mysqli_query($con,$s);
@@ -41,11 +48,7 @@ $result = mysqli_fetch_array($fill);
  </div>
  </form>
 <?php
-// not in practical start
-if (!isset($_POST['done'])){
-    header('location:45-46index.php');
-}
-// not in practical end
+
  if (isset($_POST['done'])){
     
     $name = $_POST['name'];
@@ -55,6 +58,7 @@ if (!isset($_POST['done'])){
     $query = mysqli_query($con,$q);
     header('location:45-46index.php');
  }
+}
 ?>
  </div>
 </body>
