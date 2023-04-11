@@ -17,7 +17,7 @@ if (!isset($_GET['enroll'])){
     header('location:45-46index.php');
 }
 // not in practical end
-if (!isset($_GET['enroll'])){
+if (isset($_GET['enroll'])){
 $enroll = $_GET['enroll'];
 $s = "select * from student where enroll=$enroll";
 $fill = mysqli_query($con,$s);
