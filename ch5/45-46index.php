@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- I don't know what to do in 43 so I added dynamically update & delete -->
+    
     <head>
         <title></title>
         <meta charset="UTF-8">
@@ -12,7 +12,6 @@
     </head>
     <body>
     <?php
-    //  info not in old42 
     // echo $_SERVER['HTTP_REFERER'];
     function alert($status,$text){
         ?><script>
@@ -53,7 +52,7 @@
  <div class="col-lg-12">
  <br><br>
  <!-- main practical start -->
- <h1 class="text-center" > Display customer Data </h1>
+ <h1 class="text-center" > Display Student Data </h1>
  <br>
  <a href="41.php">  <button class="btn-info btn text-white">insert</button></a>  <br><br>
  <table class="table table-striped">

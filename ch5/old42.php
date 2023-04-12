@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- I don't know what to do in 43 so I added dynamically update & delete -->
+
     <head>
         <title></title>
         <meta charset="UTF-8">
@@ -12,7 +12,6 @@
     </head>
     <body>
     <?php
-    //  info not in old42 
     // echo $_SERVER['HTTP_REFERER'];
     function alert($status,$text){
         ?><script>
@@ -64,10 +63,10 @@
  <th class="text-white"> cust_name </th>
  <th class="text-white"> item_purchase  </th>
  <th class="text-white"> mob_no </th>
- <!--info not in old42 -->
+ 
  <th class="text-white"> Delete </th>
  <th class="text-white"> Update </th>
-<!-- /info -->
+
  </tr >
  <?php
 
@@ -83,10 +82,10 @@
  <td> <?php echo $result['cust_name'];  ?> </td>
  <td> <?php echo $result['item_purchase'];  ?> </td>
  <td> <?php echo $result['mob_no'];  ?> </td>
-  <!--info not in old42 -->
+
  <td>  <a href="old42delete.php?cust_no=<?php echo $result['cust_no']; ?>" class="text-white"> <button class="btn-danger btn">Delete</button> </a>   </td>
  <td>  <a href="old42update.php?cust_no=<?php echo $result['cust_no']; ?>" class="text-white"><button class="btn-primary btn"> Update </button></a>  </td>
-<!-- /info -->
+
  </tr>
  <?php 
  }
