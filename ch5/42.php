@@ -9,7 +9,7 @@
 <body>
 <?php
 $con =mysqli_connect("localhost","root","","db");
-$qu ="select * from customer";
+$qu ="select * from cust";
     $res=mysqli_query($con,$qu);
     echo "<table border='2'>";
     ?>
@@ -22,10 +22,10 @@ $qu ="select * from customer";
 
     while($row = mysqli_fetch_array($res)){
         echo "<tr>";
-        echo "<td>".$row['no']."<br></td>";
-        echo "<td>".$row['name']."<br></td>";
+        echo "<td>".$row['cust_no']."<br></td>";
+        echo "<td>".$row['cust_name']."<br></td>";
         echo "<td>".$row['item_purchase']."<br></td>";
-        echo "<td>".$row['mobile']."<br></td>";
+        echo "<td>".$row['mob_no']."<br></td>";
         echo "</tr>";
     }
     echo "</table>";
