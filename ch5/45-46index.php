@@ -40,7 +40,7 @@
         if (str_contains($_SERVER['HTTP_REFERER'], '45.php')) {
             alert('success', 'Data Upadatd');
         }
-        if (str_contains($_SERVER['HTTP_REFERER'], '40.php')) {
+        if (str_contains($_SERVER['HTTP_REFERER'], '41.php')) {
             alert('success', 'Data Inserted');
         }
         if (str_contains($_SERVER['HTTP_REFERER'], '46.php')) {
