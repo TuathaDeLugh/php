@@ -5,7 +5,7 @@ if (!isset($_GET['enroll'])){
     header('location:45-46index.php');
 }
 // not in practical end
-if (!isset($_GET['enroll'])){
+if (isset($_GET['enroll'])){
 $enroll = $_GET['enroll'];
 
 $q = " DELETE FROM `student` WHERE enroll = $enroll ";
