@@ -10,15 +10,13 @@
     <!-- I think thats it!!! -->
     <?php
     if ($_POST) {
-        function add($x=0, $y=1)
+        function add($x, $y)
         {
             echo "addition of no are  ";
-            $c = $x + $y;
-            return $c;
+            echo $x + $y;
         }
         $var = "add";
         $var($_POST['no1'],$_POST['no2']);
-        echo $c;
     }
 ?>
     </body>

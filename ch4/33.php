@@ -18,7 +18,6 @@
        }
         ?>
         <form method="post" action="33.php">
-        
         Enter the name:<br>  
     <input type="text" name="cname">
     <input type="submit" name="pass" value="pass" />  
